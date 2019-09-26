@@ -1,0 +1,39 @@
+inductive sets
+ - prose presentation
+ - bnf ""
+ - Rule ""
+ 
+Derivations
+Encoding inductive sets as algebraic data types
+
+Lambda Calculus 
+free and bound vars
+Syntax - alpha conversion
+Substituion 
+Operational semantics how to run prog
+
+Interpreters
+------------------
+Concrete vs Abstract syntax , parsing
+expressed values
+environments
+
+LET 
+	- pairs tuples, records
+PROC 
+	- closures
+	- does not spport recursive definitions
+REC 
+	- let rec 
+	
+write derivations -  eval expressions, eval at breakpoint 
+extend proc rec or let 
+add express values 
+add additional expressions to interp 
+broken down into smaller pieces  
+
+LAMBDA CALC
+
+use definitions from slide and practice 
+check alpha equivalent
+do substitions 

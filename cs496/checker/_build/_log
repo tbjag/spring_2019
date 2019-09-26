@@ -1,0 +1,7 @@
+### Starting build.
+# Target: checker.ml.depends, tags: { package(oUnit), bin_annot, extension:ml, file:checker.ml, ocaml, ocamldep, quiet }
+ocamlfind ocamldep -package oUnit -modules checker.ml > checker.ml.depends
++ ocamlfind ocamldep -package oUnit -modules checker.ml > checker.ml.depends
+ocamlfind: Package `oUnit' not found
+Command exited with code 2.
+# Compilation unsuccessful.

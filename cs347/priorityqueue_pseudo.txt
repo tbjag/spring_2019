@@ -1,0 +1,48 @@
+priority queue pseudocode
+
+create_class_element{
+	create bid_amount
+	create random_int
+	create time_stamp
+	create name_of_customer
+}
+
+create_class_pQ{
+	create array of element
+	functions:
+	-insert
+	-remove
+	-front
+	-isEmpty
+	-printQueue
+}
+
+insert{
+	create a new element
+	put at front queue
+	sort Q by bid_amount -> time_stamp -> random_int -- mitra pseudocode
+}
+
+remove{
+	if(empty) then return error
+	remove array element and shift over with shift command
+}
+
+front{
+	if(empty) then return error
+	return array[0]
+}
+
+rear{
+	if(empty) then return error
+	return array[lenth -1]
+}
+
+isEmpty{
+	return if array length == 0
+}
+
+printQueue{
+	for loop of 0 to length - 1
+		print to JSON or transfer file to SQL
+}

@@ -1,0 +1,11 @@
+let f = let c = 0
+	in proc (d) {begin set c = c+1; c end}
+in proc (x) { x + x } (f(0))
+
+evals to 3 
+
+env:
+
+store:
+
+cbneed: 

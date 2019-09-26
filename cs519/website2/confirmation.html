@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>Confirmation</title>
+        <script>
+            
+            
+             function confirmNum(){
+               var d = new Date();
+                  document.getElementById('nerd').innerText = '#'+d.getTime()
+                  localStorage.num1 = 0
+                  localStorage.num2 = 0
+                  localStorage.num3 = 0
+                  localStorage.num4 = 0
+                  localStorage.total = 0
+             }
+             
+        </script>
+        <link rel="stylesheet" href="style_sheet.css"> 
+         
+   </head>
+   <body onload="confirmNum()">
+          <ul>
+                    <li><a class="btn"href="index.html">Home</a></li>
+                    <li><a class="btn"href="categorieslist.html">Categories</a></li>
+                    <li><a class="btn"href="productlist.html">Products</a></li>
+                    <li><a class="btn"href="cart.html">Cart</a></li>
+                </ul>
+                <div class="putdown">
+     <h3>Thank You for your Order!</h3>
+     <h4>Your Order Number is: </h4>
+        <p id = 'nerd'></p>
+        </div>
+   </body>
+</html>

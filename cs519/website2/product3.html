@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        function saveValues(){
+            if(localStorage.num3 > 0){
+                alert('Item Already Added to Cart')
+                return
+            }
+            localStorage.num3 = 1;
+        }
+        </script>
+        <link rel="stylesheet" href="style_sheet.css">
+        <title>T-1</title>
+    </head>
+<body>
+    <div class="product">
+        <img src="http://monstersvault.com/wp-content/uploads/2018/01/t_1_terminator_04.jpg" alt="t-1">
+        <div class="product-detail">
+        <h2 id="product-name">T-1</h2>
+        <h2 class="product-price">$2</h2>
+        <button onclick="saveValues()">Add to Cart</button>
+    </div>
+    </div>
+    <ul>
+            <li><a class="btn"href="index.html">Home</a></li>
+            <li><a class="btn"href="categorieslist.html">Categories</a></li>
+            <li><a class="btn"href="productlist.html">Products</a></li>
+            <li><a class="btn"href="cart.html">Cart</a></li>
+        </ul>
+
+
+
+</body>
+</html>

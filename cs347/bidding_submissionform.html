@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+		function check()
+		{
+			document.getElementById('f1').innerHTML = document.form1.id.value;
+			document.getElementById('f2').innerHTML = document.form1.bid.value;
+		}
+		</script>
+	</head>
+	<body>
+		<form name = 'form1'>
+			<p>Enter ID:</p>
+			<input type = 'text' name = 'id' value = ''>
+			<p>Enter Bid Amount</p> 
+			<input type = 'text' name = 'bid' value = ''>
+			<p><input type = 'submit' onclick = 'check(); return false'></p>
+			
+		</form>
+		
+		<p id='f1'></p>
+		<p id='f2'></p>
+	</body>
+</html>

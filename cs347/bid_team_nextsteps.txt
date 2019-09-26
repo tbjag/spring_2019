@@ -1,0 +1,41 @@
+4/11/2019
+
+so right now we have to completely reintegrate with the new system handlebars
+instead of sorting we will just run smart queries on the entries in the database
+
+---Parameters---
+
+we will have start html page with options:
+-tier #: what on the list you will be bidding on just an int
+-category of ad: what type of it will be(scalable to whatever) just an int
+-bid: what price you want to pay for bid (float)
+
+session parameter hopefully will be passed: 
+user id: when customer logs in we will see that in session (string)
+time: just use js to log time
+random int for conflict
+
+--- These parameters will be passed to the database when costumer clicks submit ---
+
+SORTING!!
+
+once those parameters are in the DB, we will just run a query to find each listing for each one
+
+i know this works in SQL so i think there should be an equivalent in MongoDB
+
+ex for sql:
+
+for the first listing it would query for the max of tier#: that would pull up the row of all the parameters
+from there it can take the ad/ ad type and whatever else is needed from database and send that to front end 
+if there is a bidding conflict, then look at time submission, if submission is the same then use random int
+
+so sorting is done though db query
+
+conclusion/issues 
+
+idk how mongodb queries work 
+pathing needs to be learned as well
+also does bidding take the ad pic? or does that come from the profile? 
+
+
+

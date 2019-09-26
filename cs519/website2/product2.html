@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        function saveValues(){
+            if(localStorage.num2 > 0){
+                alert('Item Already Added to Cart')
+                return
+            }
+            localStorage.num2 = 1;
+        }
+        </script>
+        <link rel="stylesheet" href="style_sheet.css">
+        <title>T-X</title>
+    </head>
+<body>
+    <div class="product">
+        <img src="https://static.comicvine.com/uploads/original/11128/111289255/5969442-t-x.jpg" alt="t-x">
+        <div class="product-detail">
+            <h2 id="product-name">T-X</h2>
+            <h2 class="product-price">$2099</h2>
+            <button onclick="saveValues()">Add to Cart</button>
+        </div>
+    </div>
+    <ul>
+        <li><a class="btn"href="index.html">Home</a></li>
+        <li><a class="btn"href="categorieslist.html">Categories</a></li>
+        <li><a class="btn"href="productlist.html">Products</a></li>
+        <li><a class="btn"href="cart.html">Cart</a></li>
+    </ul>
+
+
+
+</body>
+</html>

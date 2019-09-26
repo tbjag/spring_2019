@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        function saveValues(){
+            if(localStorage.num4 > 0){
+                alert('Item Already Added to Cart')
+                return
+            }
+            localStorage.num4 = 1;
+        }
+        </script>
+        <link rel="stylesheet" href="style_sheet.css">
+        <title>T-1000</title>
+    </head>
+<body>
+    <ul>
+        <li><a class="btn"href="index.html">Home</a></li>
+        <li><a class="btn"href="categorieslist.html">Categories</a></li>
+        <li><a class="btn"href="productlist.html">Products</a></li>
+        <li><a class="btn"href="cart.html">Cart</a></li>
+    </ul>
+    <div class="product">
+        <img src="https://i.ytimg.com/vi/0Kug8mJ8WiM/maxresdefault.jpg" alt="t-1000">
+        <div class="product-detail">
+        <h2 id="product-name">T-1000</h2>
+        <h2 class="product-price">$80</h2>
+        <button onclick="saveValues()">Add to Cart</button>
+    </div>
+    </div>
+</body>
+</html>

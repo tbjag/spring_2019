@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>Checkout</title>
+        <script>
+             function loadValues(){
+            document.getElementById('checkout').innerText= localStorage.total;
+        }
+        </script>
+        <link rel="stylesheet" href="style_sheet.css">  
+   </head>
+   <body onload="loadValues()">
+          <ul>
+                    <li><a class="btn"href="index.html">Home</a></li>
+                    <li><a class="btn"href="categorieslist.html">Categories</a></li>
+                    <li><a class="btn"href="productlist.html">Products</a></li>
+                </ul>
+          <div class="putdown">
+          <p>Your Total is: $</p>
+          <p id="checkout"></p>
+          <p>Cash on delivery Payment</p>
+          <p>Receive Doom in person</p>
+          <hr>
+          <a class="cat-btn"href="confirmation.html">BUY</a>
+          </div>
+          
+   </body>
+</html>
